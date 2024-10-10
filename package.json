@@ -10,5 +10,10 @@
   "description": "",
   "bin": {
     "express-example": "bin/express-example.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.0.0-1",
+    "eslint-plugin-node": "^11.1.0"
   }
 }
