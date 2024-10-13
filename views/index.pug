@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Collection
+    script(src='/assets/magic-form.js' type="module" async)
+  body
+    h1 Collection
+
+    magic-form(target="#items")
+      form(action="/" method="POST")
+        label Name:
+          input(type="text" name="name")
+        button(type=submit) Create\
+
+    if items
+      ul(id="items")
+        include ./item-list
